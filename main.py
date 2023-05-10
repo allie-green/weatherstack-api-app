@@ -27,8 +27,6 @@ while True:
         print(f'\n{info}\nError code: {code}. {type_description}.\n')
         break
 
-    # print('\n'+json.dumps(data, indent=4)+'\n')
-
     name = data["location"]["name"] 
     region = data["location"]["region"]
     country = data["location"]["country"]
