@@ -10,7 +10,9 @@ api_key = os.getenv('API_KEY')
 while True:
     print('\nEnter location, or press ENTER to exit.')
     in_location = input('Location: ')
-    if len(in_location) == 0 : break
+    if not in_location or in_location.isspace() : 
+        print('Thank you for using the weather app. Have a great day!')
+        break
 
     params = {
         "access_key" : api_key,
